@@ -6,7 +6,11 @@ Created on Fri Dec  4 08:39:29 2020
 """
 
 var=input("Input a number : ")
+var2=input("input other number :")
 var=int(var)
+var2=int(var2)
+
+var=var+var2
     
 if var < 0:
     print("The number is Negative")

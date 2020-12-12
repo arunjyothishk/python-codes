@@ -5,9 +5,10 @@ Created on Fri Dec  4 08:39:29 2020
 @author: arunjyothish
 """
 
-list_var=[10,20,30,50,10]
-count=element=total=0
 
+list_var=[10,20,30,50,10]
+
+count=element=total=0
 for element in list_var:
     total+=element
     count+=1
