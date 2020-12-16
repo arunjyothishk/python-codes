@@ -4,16 +4,25 @@ Created on Fri Dec  4 08:39:29 2020
 
 @author: arunjyothish
 """
-
 from numpy import *
-from math import pi
-angle=float(input("Enter an angle to find it's trignometric values: "))
-angle*=pi/180
-print(sin(angle))
-realp=int(input("Enter Real part of an imaginary number: "))
-imagp=int(input("Enter Imaginary part of an imaginary number: "))
-complex_num=complex(realp,imagp)
-print("your Entered imaginary number: ",complex_num)
-print("Its real part: ",real(complex_num))
-print("Its real part: ",imag(complex_num))
+comp=complex(input("Enter a complex number: "))
+print("Entered complex number is : ",comp)
+print("Real part of the complex number is : ",real(comp))
+print("Imaginary part of the complex number is : ",imag(comp))
+
+angle=float(input("Enter angle in degree : "))
+rad=angle*pi/180
+# print("Angle in radian : ",rad)
+print("Sine value of the angle : ",round(sin(rad),3))
+print()
+angle_str=input("Enter angles seperated with ','  : ")
+list_angles=angle_str.split(',')
+print("Entered angles list: ",list_angles)
+rad=[]
+
+for count in range(len(list_angles)):
+    rad.insert(count,float(list_angles[count])*pi/180)
+print("Radian angle list : ",rad)
+sinc_values=sinc(rad)
+print("Sinc values list : ",sinc_values)
 
