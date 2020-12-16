@@ -15,7 +15,7 @@ length1=len(arr1)
 length2=len(arr2)
 
 def classic_method(arr1,arr2):
-    result=zeros((length,length)) # initializing result matrix (row*coloum)
+    result=zeros((length1,length2)) # initializing result matrix (row*coloum)
     for i in range(length1):  #row loop
         for j in range(length2):
             result[i][j]=arr1[i]*arr2[j]
