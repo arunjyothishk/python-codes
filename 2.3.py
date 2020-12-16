@@ -1,24 +1,33 @@
-from numpy import array,zeros,arange
-import time
-list_1=arange(0,1000,dtype=int)
-arr1=array(list_1)
-# list_1.reverse()
-arr2=array(list_1)
-# print(arr1)
-# print(arr2)
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec  16 10:39:29 2020
 
-zero_arr=zeros(len(arr1),dtype=int)
+@author: arunjyothish
+"""
+from numpy import *
+import time
+arr1=arange(0,1000) # assuming as a row matrix
+# print(arr1)
+arr2=arange(1000,2000) # assuming as a coloum matrix
+
+def classic_method(arr1,arr2):
+    result=zeros(len(arr1),len(arr2)) # initializing result matrix (row*coloum)
+    for i in range(len(arr1)):  #row loop
+        for j in range(len(arr2)):
+            result[i][j]=arr1[i]*arr2[j]
+    return result
+
+def vectorization_method(arr1,arr2):
+    result=arr1+arr2
+    return result
+
 time_init=time.time()
-for i in range (len(arr1)):
-    zero_arr[i] = arr1[i] + arr2[i]
+classic_method(arr1,arr2)
 time_end=time.time()
-time_diff=time_end-time_init
-# print("classic method result : ",zero_arr," Time taken to process : ", time_diff)
-print("process time with loop: ",time_diff)
+print("Process time classical method: ",time.end-time.init)
+print()
+
 time_init=time.time()
-arr3=arr1+arr2
+vectorization_method(arr1,arr2)
 time_end=time.time()
-time_diff=time_end-time_init
-# print("Numpy array sum result: ",arr3,"process time: ",time_diff)
-# print(arr3)
-print("process time with numpy-array: ",time_diff)
+print("Process time vectorization method: ",time.end-time.init)
