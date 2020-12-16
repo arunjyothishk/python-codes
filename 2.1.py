@@ -6,9 +6,13 @@ Created on Fri Dec  4 08:39:29 2020
 """
 
 def OPERATION(a,b):
-    
-    result=a+b
-    avg=result/2
+    try:
+        a,b=int(a),int(b)
+        result=a+b
+        avg=result/2
+    except ValueError:
+        print("FUNCTION RECEIVE INTEGER ARGUMENTS ONLY")
+        result=avg=0
         
         
     return result,avg
@@ -17,5 +21,5 @@ def OPERATION(a,b):
 a=input("Enter first Number: ")
 
 b=input("Enter Second Number: ")
-val1,val2 = OPERATION(int(a),int(b))
+val1,val2 = OPERATION(a,b)
 print("The sum is ",val1,"; The average is ",val2,";")
