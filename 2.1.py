@@ -7,7 +7,7 @@ Created on Fri Dec  4 08:39:29 2020
 
 def OPERATION(a,b):
     try:
-        a,b=int(a),int(b)
+        a,b=float(a),float(b)
         result=a+b
         avg=result/2
     except ValueError:
