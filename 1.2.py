@@ -13,9 +13,9 @@ var2=int(var2)
 var=var+var2
     
 if var < 0:
-    print("The number is Negative")
+    print("Sum of The numbers is Negative")
 elif var>0:
-    print("The number is an Positive")
+    print("Sum of The numbers is an Positive")
 else:
-    print("The number is Zero")
+    print("Sum of The numbers is Zero")
 print("Exiting ..")
