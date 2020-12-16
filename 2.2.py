@@ -6,7 +6,9 @@ Created on Fri Dec  4 08:39:29 2020
 """
 
 from numpy import *
-angle=int(input("Enter an angle to find it's trignometric values: "))
+from math import pi
+angle=float(input("Enter an angle to find it's trignometric values: "))
+angle*=pi/180
 print(sin(angle))
 realp=int(input("Enter Real part of an imaginary number: "))
 imagp=int(input("Enter Imaginary part of an imaginary number: "))
