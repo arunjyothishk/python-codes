@@ -1,14 +1,15 @@
-import numpy as np  
-n=input("number of elements")
-a=[]
+from numpy import array,real
+
+n=input("Enter the number of elements: ")
+a=list()
 # print(list())
 
 for i in range(int(n)):
-    a.append(input("elements: "))
-arr=np.array(a)
-arr1=np.real(arr)
-arr2=np.array(arr1,dtype=int)
-print("Entered complex array is : \n",arr)
+    a.append(complex(input("Elements: ")))
+arr0=array(a)
+# arr1=real(arr0)
+arr2=array(arr0,dtype=int)
+print("Entered complex number array is : \n",arr0)
 print("Integer Array : \n",arr2)
-ans=(3+4j)*arr
-print("multiplying coupler array with 3+4j gives :\n",ans)
+mul=arr0*arr2
+print("multiplying complex array with 3+4j gives :\n",mul)
