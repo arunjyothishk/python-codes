@@ -23,7 +23,7 @@ def sincc():
     list_angles=angle_str.split(',')
     print("Entered angles list: ",list_angles)
     rad=[]
-
+    
     for count in range(len(list_angles)):
         rad.insert(count,float(list_angles[count])*pi/180)
     print("Radian angle list : ",rad)

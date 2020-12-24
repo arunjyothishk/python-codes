@@ -4,7 +4,7 @@ from numpy import random
 M=15
 x = np.arange(0, M, 1)
 y=random.randint(11, size=(M))
-fig,a= plt.subplots(3,1)                
+fi,a= plt.subplots(3,1)                
 a[0].plot(x,y)
 a[0].set_title('Line plot')
 a[1].stem(x,y)
