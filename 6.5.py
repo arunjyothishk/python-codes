@@ -13,5 +13,12 @@
 import numpy as np
 import matplotlib.pyplot as plot
 t = np.arange(-10,10,0.01)
-y = cos(t)
+y1 = np.cos(t)
+y2 = np.cos(t)*np.cos(5*t)+np.cos(5*t)
+fig,a=plot.subplots(2,1)
+a[0].plot(t,y1)
+a[0].set_title('cos(t)')
+a[1].plot(t,y2)
+a[1].set_title('costcos5t+cos5t')
+plot.show()
 
