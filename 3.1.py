@@ -12,7 +12,7 @@ from numpy import array as arr
 complx_inp = input("Enter complex numbers ( ',' seperated ) : ")
 cmplx_list = complx_inp.split(',')
 
-print(type(complex(cmplx_list[1])))
+# print(type(complex(cmplx_list[1])))
 
 arr1=[]
 for i in range(len(cmplx_list)):

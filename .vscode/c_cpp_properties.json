@@ -3,6 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
+                "C:\\Users\\arunj\\OneDrive\\Documents\\Arduino\\libraries\\RF24Mesh",
                 "C:\\Program Files (x86)\\Arduino\\tools\\**",
                 "C:\\Users\\arunj\\OneDrive\\Documents\\Arduino\\libraries\\**",
                 "C:\\Program Files (x86)\\Arduino\\libraries\\**",

@@ -20,5 +20,6 @@ a[0].plot(t,y1)
 a[0].set_title('cos(t)')
 a[1].plot(t,y2)
 a[1].set_title('costcos5t+cos5t')
-plot.show()
+# plot.show()
+print(fig)
 
