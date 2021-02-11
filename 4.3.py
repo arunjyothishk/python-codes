@@ -15,5 +15,6 @@ print ('area by trapizodialmethod: ',area1)
 # using Simpson's rule:
 area2 = simps(y,x)
 print ('area by simpsonsrule: ',area2)
-area4=quad(lambda x: y -2,2)
+inv=lambda x:4*x**2+3
+area4=quad(inv, -2,2)
 print("area =",area4)
