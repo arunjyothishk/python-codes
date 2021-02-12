@@ -20,8 +20,8 @@ def der(y):
     plt.legend(loc='upper left')
     plt.show()
 
-# der(y)
-der(a)
+der(y)
+# der(a)
 # der(b)
 # der(d)
 # der(e)
